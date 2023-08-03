@@ -100,8 +100,7 @@ const longest=()=>{
       <p>{text.length!==0?`${longest()} is the longest word in your text.`:''}</p>
       <p>{text.length!==0?`${longest().length} is the length of ${longest()}.`:''}</p>
       <p>{text.length!==0?`The text has ${countParagraph()} paragraphs.`:''}</p>
-      <input className="form-control me-2" type="search" onChange={findText} placeholder="Search" aria-label="Search"/>
-      <button disabled={search.length===0} className="btn btn-primary my-2" type="submit" onClick={findText} >Search</button>
+      <input className="form-control me-2" type="search" onChange={findText} placeholder="Search the word to know it's frequency..." aria-label="Search"/>
       {
         search.length!=0 && <p>{search} occurs {number()} time(s) in the text.</p>
        }
